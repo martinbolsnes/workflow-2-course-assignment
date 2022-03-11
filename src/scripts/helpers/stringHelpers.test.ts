@@ -1,13 +1,13 @@
 import { makeUppercase, replaceSpaces, limitLength } from './stringHelpers';
 
 it('makes uppercasing', () => {
-  expect(makeUppercase('string')).toEqual('STRING');
+  expect(makeUppercase('string')).toBe('STRING');
 });
 
 it('replaces spaces', () => {
-  expect(replaceSpaces('s tring')).toEqual('s_tring');
+  expect(replaceSpaces('s tring')).toBe('s_tring');
 });
 
 it('limits lenght', () => {
-  expect(limitLength(2, 'string')).toEqual('st');
+  expect(limitLength(2, 'string')).toBe('st');
 });
